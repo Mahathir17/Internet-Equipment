@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:text="@string/Eqquipment_TextView"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="2499dp"/>
+
+
+<!--        Router-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="270dp"
+                android:src="@drawable/router"
+                android:scaleType="fitXY"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Router"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="25sp"/>
+                <!--                android:layout_marginTop="15dp"-->
+
+                <TextView
+                    android:id="@+id/routerTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:text="You have : 0"/>
+                <!--                android:layout_marginBottom="10dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+
+                <EditText
+                    android:id="@+id/routerEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+                <!--                android:layout_marginBottom="10dp"-->
+
+                <Button
+                    android:id="@+id/routerUpButtonID"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="increase router"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textSize="12sp"
+                    android:background="@drawable/background"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/routerDownButtonID"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:text="Decrease router"
+                    android:textColor="#FFFFFF"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textSize="12sp"
+                    android:background="@drawable/red_bg"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+                <!--                android:layout_marginTop="7dp"-->
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/exitButtonID"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Save and Exit"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    style="@style/Widget.AppCompat.Button.Colored"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:textSize="12sp"/>-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+<!--        Microtik Router-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="270dp"
+                android:src="@drawable/microtic_router"
+                android:scaleType="fitXY"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="Microtik Router"
+                    android:textSize="20sp"/>
+                <!--                android:layout_marginTop="15dp"-->
+
+                <TextView
+                    android:id="@+id/mrTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/black"
+                    android:text="You have : 0"/>
+                <!--                android:layout_marginBottom="10dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+
+                <EditText
+                    android:id="@+id/mrEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+                <!--                android:layout_marginBottom="10dp"-->
+
+                <Button
+                    android:id="@+id/mrUpButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="increase Microtik Router"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textSize="12sp"
+                    android:background="@drawable/background"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/mrDownButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:text="Decrease Microtik Router"
+                    android:textColor="#FFFFFF"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textSize="12sp"
+                    android:background="@drawable/red_bg"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+                <!--                android:layout_marginTop="7dp"-->
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/exitButtonID"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Save and Exit"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    style="@style/Widget.AppCompat.Button.Colored"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:textSize="12sp"/>-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+<!--        8 Port Switch-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <!--            android:layout_marginTop="50dp"-->
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="270dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/eight_port_switch"
+
+                android:scaleType="fitXY"/>
+            <!--            android:layout_marginBottom="25dp"-->
+            <!--            android:layout_marginTop="50dp"-->
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="8 Port Switch"
+                    android:textSize="20sp"/>
+                <!--                android:layout_marginBottom="25dp"-->
+
+                <TextView
+                    android:id="@+id/eight_swTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:text="You have : 0"/>
+                <!--                android:layout_marginBottom="25dp"-->
+
+                <EditText
+                    android:id="@+id/eight_swEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+                <!--                android:layout_marginBottom="20dp"-->
+
+                <Button
+                    android:id="@+id/eight_swUpButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:text="increase  8  port switch"
+                    android:layout_marginBottom="10dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@drawable/background"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/eight_swDownButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:text="Decrease 8 port switch"
+                    android:textColor="@color/white"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@drawable/red_bg"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+                <!--                android:layout_marginTop="15dp"-->
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/swExitButtonID"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Save and Exit"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    style="@style/Widget.AppCompat.Button.Colored"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:textSize="12sp"/>-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+<!--        16 Port Switch-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/sixtine_port_switch"
+                android:scaleType="fitXY"/>
+            <!--            android:layout_marginTop="50dp"-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <!--                android:layout_marginTop="70dp"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="16 Port Switch"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"/>
+                <!--                    android:layout_marginTop="25dp"-->
+
+
+
+                <TextView
+                    android:id="@+id/sixteenPortSwitchTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="You have : 0"/>
+                <!--                android:layout_marginBottom="25dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+
+                <EditText
+                    android:id="@+id/sixteenPortSwitchEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+                <!--                android:layout_marginBottom="10dp"-->
+
+                <Button
+                    android:id="@+id/sixteenPortSwitchUpButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:text="increase 16 port switch"
+                    android:background="@drawable/background"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp"
+
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/sixteenPortSwitchDownButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center"
+                    android:text="Decrease 16 port switch"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@drawable/red_bg"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--        24 Port Switch-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/twinty_four_port_sw"
+                android:scaleType="fitXY"/>
+            <!--            android:layout_marginTop="50dp"-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <!--                android:layout_marginTop="70dp"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="24 Port Switch"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"/>
+                <!--                    android:layout_marginTop="25dp"-->
+
+
+
+                <TextView
+                    android:id="@+id/twintyPortSwitchTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="You have : 0"/>
+                <!--                android:layout_marginBottom="25dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+
+                <EditText
+                    android:id="@+id/twintyPortEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+                <!--                android:layout_marginBottom="10dp"-->
+
+                <Button
+                    android:id="@+id/twintyPortSwitchUpButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:text="increase 24 port switch"
+                    android:background="@drawable/background"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp"
+
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/twintyPortDownButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center"
+                    android:text="Decrease 24 port switch"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@drawable/red_bg"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        Gigabit Switch-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/gigabit_sw"
+                android:scaleType="fitXY"/>
+            <!--            android:layout_marginTop="50dp"-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <!--                android:layout_marginTop="70dp"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Gigabit Switch"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"/>
+                <!--                    android:layout_marginTop="25dp"-->
+
+
+
+                <TextView
+                    android:id="@+id/gigabitSwTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="You have : 0"/>
+                <!--                android:layout_marginBottom="25dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+
+                <EditText
+                    android:id="@+id/gigabitSwEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+                <!--                android:layout_marginBottom="10dp"-->
+
+                <Button
+                    android:id="@+id/gigabitSwUpButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:text="increase gigabit switch"
+                    android:background="@drawable/background"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp"
+
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/gigabitSwDownButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center"
+                    android:text="Decrease gigabit switch"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@drawable/red_bg"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        MC normal-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/normal_mc"
+                android:scaleType="fitXY"/>
+            <!--            android:layout_marginTop="50dp"-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <!--                android:layout_marginTop="70dp"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Normal MC"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"/>
+                <!--                    android:layout_marginTop="25dp"-->
+
+
+
+                <TextView
+                    android:id="@+id/normalMcTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="You have : 0"/>
+                <!--                android:layout_marginBottom="25dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+
+                <EditText
+                    android:id="@+id/normalMcEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+                <!--                android:layout_marginBottom="10dp"-->
+
+                <Button
+                    android:id="@+id/normalMcUpButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:text="increase  normal  mc"
+                    android:background="@drawable/background"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/normalMcDownButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center"
+                    android:text="Decrease Normal  MC"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@drawable/red_bg"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        MC Gigabit-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/gigabit_mc"
+                android:scaleType="fitXY"/>
+            <!--            android:layout_marginTop="50dp"-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <!--                android:layout_marginTop="70dp"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Gigabit MC"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"/>
+                <!--                    android:layout_marginTop="25dp"-->
+
+
+
+                <TextView
+                    android:id="@+id/gigabitMcTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="You have : 0"/>
+                <!--                android:layout_marginBottom="25dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+
+                <EditText
+                    android:id="@+id/gigabitMcEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+                <!--                android:layout_marginBottom="10dp"-->
+
+                <Button
+                    android:id="@+id/gigabitMcUpButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:text="increase  gigabit   mc"
+                    android:background="@drawable/background"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/gigabitMcDownButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center"
+                    android:text="Decrease gigabit   MC"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@drawable/red_bg"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        SFP module-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/sep_module"
+                android:scaleType="fitXY"/>
+            <!--            android:layout_marginTop="50dp"-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <!--                android:layout_marginTop="70dp"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="SFP Module"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"/>
+                <!--                    android:layout_marginTop="25dp"-->
+
+
+
+                <TextView
+                    android:id="@+id/sepTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="You have : 0"/>
+                <!--                android:layout_marginBottom="25dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+
+                <EditText
+                    android:id="@+id/sepEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+                <!--                android:layout_marginBottom="10dp"-->
+
+                <Button
+                    android:id="@+id/sepUpButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:text="increase  Sfp   module"
+                    android:background="@drawable/background"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/sepDownButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center"
+                    android:text="Decrease  Sfp   Module"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@drawable/red_bg"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        Radio Link-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/radio_link"
+                android:scaleType="fitXY"/>
+            <!--            android:layout_marginTop="50dp"-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <!--                android:layout_marginTop="70dp"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Radio Link"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"/>
+                <!--                    android:layout_marginTop="25dp"-->
+
+
+
+                <TextView
+                    android:id="@+id/radioTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="You have : 0"/>
+                <!--                android:layout_marginBottom="25dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+
+                <EditText
+                    android:id="@+id/radioEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+                <!--                android:layout_marginBottom="10dp"-->
+
+                <Button
+                    android:id="@+id/radioUpButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:text="increase radio link"
+                    android:background="@drawable/background"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <Button
+                    android:id="@+id/radioLinkDownButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center"
+                    android:text="Decrease Radio Link"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@drawable/red_bg"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+<!--     Repeter-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/reapeter"
+                android:scaleType="fitXY"/>
+            <!--            android:layout_marginTop="50dp"-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <!--                android:layout_marginTop="70dp"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Repeater"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"/>
+                <!--                    android:layout_marginTop="25dp"-->
+
+
+
+                <TextView
+                    android:id="@+id/repeaterTextViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="7dp"
+                    android:textColor="@color/black"
+                    android:text="You have : 0"/>
+                <!--                android:layout_marginBottom="25dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+
+                <EditText
+                    android:id="@+id/repeaterEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:hint="Enter number"
+                    android:inputType="number"
+                    android:textAlignment="center"/>
+                <!--                android:layout_marginBottom="10dp"-->
+
+                <Button
+                    android:id="@+id/repeaterUpButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:text="increase repeater"
+                    android:background="@drawable/background"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <Button
+                    android:id="@+id/repeaterDownButtonID"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center"
+                    android:text="Decrease repeater"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@drawable/red_bg"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/exitButtonID"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_Button"
+            style="@style/CardView.Light"
+            android:background="#018E45"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+        <!--            android:layout_marginTop="25dp"-->
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
